@@ -7,7 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
 
 public class MemberPrinter {
-	
+	//Autowired(required=false)사용하는 경우 초기화한 dateTimeFormatter를 인자로 전달 -> null로 전달안됨
+	//Nullable 애노태이션 사용 시 null로 전달
+	//Autowired(required=false)는 일치하는 빈이 없으면 값 할당 자체를 안함
+	//Nullable 애노태이션은 일치하는 빈이 없을 경우 null값을 할당
 	@Autowired
 	@Nullable
 	private DateTimeFormatter dateTimeFormatter;
