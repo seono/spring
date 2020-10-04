@@ -16,8 +16,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework:spring-context:5.2.8.RELEASE'
-    implementation 'org.aspectj:aspectjweaver:1.9.5'
+    implementation 'org.springframework:spring-webmvc:5.2.8.RELEASE'
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    providedCompile 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.3'
 }
 
 group = 'sp5'
